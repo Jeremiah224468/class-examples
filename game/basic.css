@@ -15,21 +15,24 @@ body{
 
 #colluseum{
     width: 512px;
+    max-width: 100%;
     height: 64px;
     background-image: url("images/sprites/Plains.gif");
     position:relative;
 }
 
 .fighter{
-    top:8px;
+    bottom:8px;
     width:36px;
     height: 50px;
     position: absolute;
+    background-repeat: no-repeat;
+    background-position: bottom;
     z-index: 1;
 }
 
 #fighter1{
-    left: 200px;
+    left: 30%;
     background-image: url(images/sprites/Warrior.gif);
     transform: scaleX(-1);
 }
@@ -44,6 +47,8 @@ body{
 
 #fighter1.dead{
     background-image: url(images/sprites/Warrior-Dead.gif);
+    width: 52px;
+    height: 30px;
 }
 
 #fighter1.victory{
@@ -55,7 +60,7 @@ body{
 }
 
 #fighter2{
-    right:200px;
+    right:30%;
     background-image: url(images/sprites/Monk.gif);
 }
 
@@ -69,6 +74,8 @@ body{
 
 #fighter2.dead{
     background-image: url(images/sprites/Monk-Dead.gif);
+    width: 52px;
+    height: 30px;
 }
 
 #fighter2.victory{
